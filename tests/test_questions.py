@@ -62,6 +62,7 @@ class TestQuestions:
         questions_page.click_seventh_question()
         assert questions_page.get_seventh_answer() == 'Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.'
 
+
     @allure.description('При клике на восьмой вопрос открывается соответствующий текст')
     @allure.title('При клике на вопрос открывается соответствующий текст')
     def test_eighth_question(self, browser):
