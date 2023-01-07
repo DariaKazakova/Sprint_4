@@ -54,6 +54,7 @@ class TestQuestions:
         questions_page.click_sixth_question()
         assert questions_page.get_sixth_answer() == 'Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.'
 
+
     @allure.description('При клике на седьмой вопрос открывается соответствующий текст')
     @allure.title('При клике на вопрос открывается соответствующий текст')
     def test_seventh_question(self, browser):
